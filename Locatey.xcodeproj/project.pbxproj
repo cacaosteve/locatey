@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA00A7AF2543BF73003D0FAA /* LocateyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00A7AE2543BF73003D0FAA /* LocateyApp.swift */; };
+		AA00A7B12543BF73003D0FAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00A7B02543BF73003D0FAA /* ContentView.swift */; };
+		AA00A7B32543BF75003D0FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA00A7B22543BF75003D0FAA /* Assets.xcassets */; };
+		AA00A7B62543BF75003D0FAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA00A7B52543BF75003D0FAA /* Preview Assets.xcassets */; };
+		AA00A7B82543BF75003D0FAA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00A7B72543BF75003D0FAA /* Persistence.swift */; };
+		AA00A7BB2543BF75003D0FAA /* Locatey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA00A7B92543BF75003D0FAA /* Locatey.xcdatamodeld */; };
+		AA00A7C62543BF76003D0FAA /* LocateyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00A7C52543BF76003D0FAA /* LocateyTests.swift */; };
+		AA00A7D12543BF76003D0FAA /* LocateyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00A7D02543BF76003D0FAA /* LocateyUITests.swift */; };
+		AA00A82C2544E991003D0FAA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00A82B2544E991003D0FAA /* LoginView.swift */; };
+		AA3CFC102560B97000DD6D1D /* LoginFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CFC0F2560B97000DD6D1D /* LoginFetcher.swift */; };
+		AA3CFC162560B9FA00DD6D1D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AA3CFC152560B9FA00DD6D1D /* Alamofire */; };
+		AA3FA9342560E691005938B4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA9332560E691005938B4 /* NetworkManager.swift */; };
+		AA3FA9462560F104005938B4 /* AuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA9452560F104005938B4 /* AuthenticationType.swift */; };
+		AA3FA94B2560F10D005938B4 /* AuthenticationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA94A2560F10D005938B4 /* AuthenticationState.swift */; };
+		AA3FA9502560F660005938B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA3FA94F2560F660005938B4 /* GoogleService-Info.plist */; };
+		AA3FA95B2560F817005938B4 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FA95A2560F817005938B4 /* ProgressView.swift */; };
+		AA75E3FA254FB2820089A563 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75E3F9254FB2820089A563 /* MapView.swift */; };
+		AA75E3FF254FB28B0089A563 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75E3FE254FB28B0089A563 /* PeopleView.swift */; };
+		AA7E3CC32564C27D0038397D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = AA7E3CC22564C27D0038397D /* Apollo */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA00A7C22543BF76003D0FAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA00A7A32543BF73003D0FAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA00A7AA2543BF73003D0FAA;
+			remoteInfo = Locatey;
+		};
+		AA00A7CD2543BF76003D0FAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA00A7A32543BF73003D0FAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA00A7AA2543BF73003D0FAA;
+			remoteInfo = Locatey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA00A7AB2543BF73003D0FAA /* Locatey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locatey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA00A7AE2543BF73003D0FAA /* LocateyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateyApp.swift; sourceTree = "<group>"; };
+		AA00A7B02543BF73003D0FAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA00A7B22543BF75003D0FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA00A7B52543BF75003D0FAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA00A7B72543BF75003D0FAA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		AA00A7BA2543BF75003D0FAA /* Locatey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Locatey.xcdatamodel; sourceTree = "<group>"; };
+		AA00A7BC2543BF75003D0FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA00A7C12543BF76003D0FAA /* LocateyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocateyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA00A7C52543BF76003D0FAA /* LocateyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateyTests.swift; sourceTree = "<group>"; };
+		AA00A7C72543BF76003D0FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA00A7CC2543BF76003D0FAA /* LocateyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocateyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA00A7D02543BF76003D0FAA /* LocateyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateyUITests.swift; sourceTree = "<group>"; };
+		AA00A7D22543BF76003D0FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA00A8202543CB8D003D0FAA /* Locatey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Locatey.entitlements; sourceTree = "<group>"; };
+		AA00A82B2544E991003D0FAA /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AA3CFC0F2560B97000DD6D1D /* LoginFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFetcher.swift; sourceTree = "<group>"; };
+		AA3FA9332560E691005938B4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AA3FA9452560F104005938B4 /* AuthenticationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationType.swift; sourceTree = "<group>"; };
+		AA3FA94A2560F10D005938B4 /* AuthenticationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationState.swift; sourceTree = "<group>"; };
+		AA3FA94F2560F660005938B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA3FA95A2560F817005938B4 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		AA75E3F9254FB2820089A563 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AA75E3FE254FB28B0089A563 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA00A7A82543BF73003D0FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3CFC162560B9FA00DD6D1D /* Alamofire in Frameworks */,
+				AA7E3CC32564C27D0038397D /* Apollo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00A7BE2543BF76003D0FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00A7C92543BF76003D0FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA00A7A22543BF73003D0FAA = {
+			isa = PBXGroup;
+			children = (
+				AA00A7AD2543BF73003D0FAA /* Locatey */,
+				AA00A7C42543BF76003D0FAA /* LocateyTests */,
+				AA00A7CF2543BF76003D0FAA /* LocateyUITests */,
+				AA00A7AC2543BF73003D0FAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA00A7AC2543BF73003D0FAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA00A7AB2543BF73003D0FAA /* Locatey.app */,
+				AA00A7C12543BF76003D0FAA /* LocateyTests.xctest */,
+				AA00A7CC2543BF76003D0FAA /* LocateyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA00A7AD2543BF73003D0FAA /* Locatey */ = {
+			isa = PBXGroup;
+			children = (
+				AA00A8202543CB8D003D0FAA /* Locatey.entitlements */,
+				AA00A7AE2543BF73003D0FAA /* LocateyApp.swift */,
+				AA00A7B02543BF73003D0FAA /* ContentView.swift */,
+				AA75E3F9254FB2820089A563 /* MapView.swift */,
+				AA75E3FE254FB28B0089A563 /* PeopleView.swift */,
+				AA00A82B2544E991003D0FAA /* LoginView.swift */,
+				AA00A7B22543BF75003D0FAA /* Assets.xcassets */,
+				AA00A7B72543BF75003D0FAA /* Persistence.swift */,
+				AA3CFC0F2560B97000DD6D1D /* LoginFetcher.swift */,
+				AA3FA9452560F104005938B4 /* AuthenticationType.swift */,
+				AA3FA94A2560F10D005938B4 /* AuthenticationState.swift */,
+				AA3FA95A2560F817005938B4 /* ProgressView.swift */,
+				AA00A7BC2543BF75003D0FAA /* Info.plist */,
+				AA3FA94F2560F660005938B4 /* GoogleService-Info.plist */,
+				AA00A7B92543BF75003D0FAA /* Locatey.xcdatamodeld */,
+				AA00A7B42543BF75003D0FAA /* Preview Content */,
+				AA3FA9332560E691005938B4 /* NetworkManager.swift */,
+			);
+			path = Locatey;
+			sourceTree = "<group>";
+		};
+		AA00A7B42543BF75003D0FAA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA00A7B52543BF75003D0FAA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA00A7C42543BF76003D0FAA /* LocateyTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA00A7C52543BF76003D0FAA /* LocateyTests.swift */,
+				AA00A7C72543BF76003D0FAA /* Info.plist */,
+			);
+			path = LocateyTests;
+			sourceTree = "<group>";
+		};
+		AA00A7CF2543BF76003D0FAA /* LocateyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA00A7D02543BF76003D0FAA /* LocateyUITests.swift */,
+				AA00A7D22543BF76003D0FAA /* Info.plist */,
+			);
+			path = LocateyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA00A7AA2543BF73003D0FAA /* Locatey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA00A7D52543BF76003D0FAA /* Build configuration list for PBXNativeTarget "Locatey" */;
+			buildPhases = (
+				AA00A7A72543BF73003D0FAA /* Sources */,
+				AA00A7A82543BF73003D0FAA /* Frameworks */,
+				AA00A7A92543BF73003D0FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Locatey;
+			packageProductDependencies = (
+				AA3CFC152560B9FA00DD6D1D /* Alamofire */,
+				AA7E3CC22564C27D0038397D /* Apollo */,
+			);
+			productName = Locatey;
+			productReference = AA00A7AB2543BF73003D0FAA /* Locatey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA00A7C02543BF76003D0FAA /* LocateyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA00A7D82543BF76003D0FAA /* Build configuration list for PBXNativeTarget "LocateyTests" */;
+			buildPhases = (
+				AA00A7BD2543BF76003D0FAA /* Sources */,
+				AA00A7BE2543BF76003D0FAA /* Frameworks */,
+				AA00A7BF2543BF76003D0FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA00A7C32543BF76003D0FAA /* PBXTargetDependency */,
+			);
+			name = LocateyTests;
+			productName = LocateyTests;
+			productReference = AA00A7C12543BF76003D0FAA /* LocateyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA00A7CB2543BF76003D0FAA /* LocateyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA00A7DB2543BF76003D0FAA /* Build configuration list for PBXNativeTarget "LocateyUITests" */;
+			buildPhases = (
+				AA00A7C82543BF76003D0FAA /* Sources */,
+				AA00A7C92543BF76003D0FAA /* Frameworks */,
+				AA00A7CA2543BF76003D0FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA00A7CE2543BF76003D0FAA /* PBXTargetDependency */,
+			);
+			name = LocateyUITests;
+			productName = LocateyUITests;
+			productReference = AA00A7CC2543BF76003D0FAA /* LocateyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA00A7A32543BF73003D0FAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					AA00A7AA2543BF73003D0FAA = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					AA00A7C02543BF76003D0FAA = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = AA00A7AA2543BF73003D0FAA;
+					};
+					AA00A7CB2543BF76003D0FAA = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = AA00A7AA2543BF73003D0FAA;
+					};
+				};
+			};
+			buildConfigurationList = AA00A7A62543BF73003D0FAA /* Build configuration list for PBXProject "Locatey" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA00A7A22543BF73003D0FAA;
+			packageReferences = (
+				AA3CFC142560B9FA00DD6D1D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AA7E3CC12564C27C0038397D /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = AA00A7AC2543BF73003D0FAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA00A7AA2543BF73003D0FAA /* Locatey */,
+				AA00A7C02543BF76003D0FAA /* LocateyTests */,
+				AA00A7CB2543BF76003D0FAA /* LocateyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA00A7A92543BF73003D0FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00A7B62543BF75003D0FAA /* Preview Assets.xcassets in Resources */,
+				AA00A7B32543BF75003D0FAA /* Assets.xcassets in Resources */,
+				AA3FA9502560F660005938B4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00A7BF2543BF76003D0FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00A7CA2543BF76003D0FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA00A7A72543BF73003D0FAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3FA9342560E691005938B4 /* NetworkManager.swift in Sources */,
+				AA00A7B82543BF75003D0FAA /* Persistence.swift in Sources */,
+				AA3CFC102560B97000DD6D1D /* LoginFetcher.swift in Sources */,
+				AA3FA9462560F104005938B4 /* AuthenticationType.swift in Sources */,
+				AA75E3FA254FB2820089A563 /* MapView.swift in Sources */,
+				AA3FA95B2560F817005938B4 /* ProgressView.swift in Sources */,
+				AA3FA94B2560F10D005938B4 /* AuthenticationState.swift in Sources */,
+				AA75E3FF254FB28B0089A563 /* PeopleView.swift in Sources */,
+				AA00A7BB2543BF75003D0FAA /* Locatey.xcdatamodeld in Sources */,
+				AA00A7B12543BF73003D0FAA /* ContentView.swift in Sources */,
+				AA00A82C2544E991003D0FAA /* LoginView.swift in Sources */,
+				AA00A7AF2543BF73003D0FAA /* LocateyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00A7BD2543BF76003D0FAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00A7C62543BF76003D0FAA /* LocateyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00A7C82543BF76003D0FAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00A7D12543BF76003D0FAA /* LocateyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA00A7C32543BF76003D0FAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA00A7AA2543BF73003D0FAA /* Locatey */;
+			targetProxy = AA00A7C22543BF76003D0FAA /* PBXContainerItemProxy */;
+		};
+		AA00A7CE2543BF76003D0FAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA00A7AA2543BF73003D0FAA /* Locatey */;
+			targetProxy = AA00A7CD2543BF76003D0FAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA00A7D32543BF76003D0FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA00A7D42543BF76003D0FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA00A7D62543BF76003D0FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Locatey/Locatey.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Locatey/Preview Content\"";
+				DEVELOPMENT_TEAM = 29XT7263X7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Locatey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zyszkiewicz.Locatey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA00A7D72543BF76003D0FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Locatey/Locatey.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Locatey/Preview Content\"";
+				DEVELOPMENT_TEAM = 29XT7263X7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Locatey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zyszkiewicz.Locatey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA00A7D92543BF76003D0FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29XT7263X7;
+				INFOPLIST_FILE = LocateyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyszkiewicz.LocateyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Locatey.app/Locatey";
+			};
+			name = Debug;
+		};
+		AA00A7DA2543BF76003D0FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29XT7263X7;
+				INFOPLIST_FILE = LocateyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyszkiewicz.LocateyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Locatey.app/Locatey";
+			};
+			name = Release;
+		};
+		AA00A7DC2543BF76003D0FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29XT7263X7;
+				INFOPLIST_FILE = LocateyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyszkiewicz.LocateyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Locatey;
+			};
+			name = Debug;
+		};
+		AA00A7DD2543BF76003D0FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29XT7263X7;
+				INFOPLIST_FILE = LocateyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyszkiewicz.LocateyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Locatey;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA00A7A62543BF73003D0FAA /* Build configuration list for PBXProject "Locatey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00A7D32543BF76003D0FAA /* Debug */,
+				AA00A7D42543BF76003D0FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00A7D52543BF76003D0FAA /* Build configuration list for PBXNativeTarget "Locatey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00A7D62543BF76003D0FAA /* Debug */,
+				AA00A7D72543BF76003D0FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00A7D82543BF76003D0FAA /* Build configuration list for PBXNativeTarget "LocateyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00A7D92543BF76003D0FAA /* Debug */,
+				AA00A7DA2543BF76003D0FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00A7DB2543BF76003D0FAA /* Build configuration list for PBXNativeTarget "LocateyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00A7DC2543BF76003D0FAA /* Debug */,
+				AA00A7DD2543BF76003D0FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA3CFC142560B9FA00DD6D1D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		AA7E3CC12564C27C0038397D /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.36.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA3CFC152560B9FA00DD6D1D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA3CFC142560B9FA00DD6D1D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		AA7E3CC22564C27D0038397D /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA7E3CC12564C27C0038397D /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		AA00A7B92543BF75003D0FAA /* Locatey.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA00A7BA2543BF75003D0FAA /* Locatey.xcdatamodel */,
+			);
+			currentVersion = AA00A7BA2543BF75003D0FAA /* Locatey.xcdatamodel */;
+			path = Locatey.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AA00A7A32543BF73003D0FAA /* Project object */;
+}
